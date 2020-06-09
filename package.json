@@ -1,7 +1,7 @@
 {
   "name": "ecoleta-back-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "Back-end escrito em NodeJS da aplicação mobile Ecoleta. Projeto desenvolvido na Next Level Week (NLW) #1 da Rocketseat!",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server",
