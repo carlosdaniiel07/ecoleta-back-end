@@ -14,7 +14,7 @@ module.exports = {
     },
     useNullAsDefault: true
   },
-  tests: {
+  test: {
     client: 'sqlite3',
     connection: {
       filename: path.resolve(__dirname, 'src', 'database', 'database_tests.sqlite')
