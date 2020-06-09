@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/server",
     "dev": "nodemon src/server",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prestart": "npm run knex:run-migrations && npm run knex:run-seeds",
     "knex:run-migrations": "knex --knexfile knexfile.js migrate:latest",
     "knex:run-seeds": "knex seed:run"
@@ -23,6 +23,8 @@
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }
