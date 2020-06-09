@@ -28,7 +28,7 @@ class ItemsController {
 
   async insert(req, res) {
     const { title, image } = req.body
-    const item = await itemService.save({ title, imageUrl })
+    const item = await itemService.save({ title, image })
     
     return res.status(201).json(item)
   }
