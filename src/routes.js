@@ -24,6 +24,7 @@ routes.delete('/items/:id', itemsController.delete)
 // points
 routes.get('/points', pointsController.index)
 routes.get('/points/:id', pointsController.show)
+routes.get('/points/:id/items', pointsController.showItems)
 routes.post('/points', pointsController.insert)
 routes.delete('/points/:id', pointsController.delete)
 

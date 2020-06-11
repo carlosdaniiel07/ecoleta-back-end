@@ -25,6 +25,15 @@ class PointService {
     return data
   }
 
+  async getItemsByPoint(pointId) {
+    const data = await knex('items')
+      .innerJoin('point_items', 'items.id', '=', 'point_items.item_id')
+      .where({ 'point_id': pointId })
+      .select(['items.id', 'items.title'])
+    
+    return data
+  }
+
   async save(point, items) {
     const trx = await knex.transaction()
     

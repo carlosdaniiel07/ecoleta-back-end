@@ -31,6 +31,11 @@ class PointsController {
     return res.json(point)
   }
 
+  async showItems(req, res) {
+    const { id } = req.params;
+    return res.json(await pointService.getItemsByPoint(id))
+  }
+
   async insert(req, res) {
     const { name, email, whatsapp, latitude, longitude, city, uf, imageUrl, items } = req.body
     const point = await pointService.save({
