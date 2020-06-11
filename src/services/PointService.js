@@ -11,7 +11,7 @@ class PointService {
   }
 
   async getById(id) {
-    const data = await knex('points').where({ id }).select('*')
+    const data = await knex('points').where({ id }).select('*').first()
     return data
   }
 
