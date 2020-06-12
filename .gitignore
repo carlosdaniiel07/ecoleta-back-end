@@ -3,3 +3,6 @@ node_modules
 
 ## SQLite files
 *.sqlite
+
+## coverage reports folder
+__tests__/coverage
